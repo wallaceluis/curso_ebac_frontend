@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de entrega</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lojas EBAC</h1>
+        <h2>Solicitação de entrega de camisas</h2>
+        <form id="form-received">
+            <label for="min-shirts">Quantidade de minima de camisas em estoque:</label>
+            <input id="min-shirts" type="number" required placeholder="Digite a quantidade">
+            <p class="error-message">A quantidade minima não pode ser maior que a maxima</p>
+            <label for="max-shirts">Capacidade máxima de camisas em estoque:</label>
+            <input id="max-shirts" type="number" required placeholder="Digite a quantidade">
+            <label>Descrição:</label>
+            <textarea placeholder="(Opcional)" id="description"></textarea>
+            <button>Solicitar</button>
+        </form>
+        <p class="received-message"></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
